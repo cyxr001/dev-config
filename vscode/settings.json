@@ -1,0 +1,147 @@
+{
+  "editor.fontFamily": "Monaco",
+  // "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "workbench.colorTheme": "Default Dark+",
+  "editor.fontSize": 13,
+  "window.zoomLevel": 1,
+  "vim.commandLineModeKeyBindingsNonRecursive": [],
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    // "<C-w>": false,
+    "<C-s>": false,
+    "<C-f>": false,
+    "<C-a>": false
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["S"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["Ctrl+u"],
+      "after": ["1", "0", "k"]
+    },
+    {
+      "before": ["Ctrl+d"],
+      "after": ["1", "0", "j"]
+    },
+    {
+      "before": [",", "p"],
+      "commands": [":register"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    // {
+    //     "before": [
+    //         "Q"
+    //     ],
+    //     "commands": [
+    //         ":q!"
+    //     ]
+    // },
+    {
+      "before": ["Ctrl+l"],
+      "commands": ["cursorRight"]
+    }
+  ],
+  // "editor.lineNumbers": "relative",
+  "files.autoSave": "afterDelay",
+  "vim.commandLineModeKeyBindings": [],
+  "liveServer.settings.CustomBrowser": "chrome",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.autoFixOnSave": true,
+  // eslint 检测文件类型
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  // vue 扩展的文件默认使用 prettier 进行格式化
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "html.format.contentUnformatted": "pre,code,textarea",
+  "editor.formatOnSave": true,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "[json]": {
+    "editor.defaultFormatter": "bysabi.prettier-vscode-standard"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "terminal.integrated.fontSize": 12,
+  "debug.console.fontSize": 12,
+  "javascript.suggest.autoImports": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.indexing": true,
+  // "python.analysis.autoImportUserSymbols": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=248"],
+  "python.analysis.diagnosticMode": "workspace",
+  "python.linting.pylintEnabled": false,
+  "python.languageServer": "Pylance",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.minimap.enabled": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "vue.features.codeActions.savingTimeLimit": 5000,
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  "go.goroot": "/Users/rui.xiao/.g/go",
+  "go.testFlags": ["-v"],
+  "go.lintOnSave": "package",
+  "go.autocompleteUnimportedPackages": true,
+  "go.lintTool": "golangci-lint",
+  "go.docsTool": "gogetdoc",
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  // "[go]": {
+  //     "editor.codeActionsOnSave": {
+  //         "source.organizeImports": true
+  //     },
+  //     "editor.formatOnSave": true
+  // },
+  // "[go]": {
+  //     "editor.codeActionsOnSave": {
+  //         "source.organizeImports": true,
+  //     },
+  //     "editor.formatOnSave": true,
+  // },
+  // "go.formatTool": "goimports",
+  // "editor.accessibilitySupport": "off",
+  "window.commandCenter": false,
+  // "debug.console.fontFamily": "Cascadia Code Light",
+  // "debug.console.fontSize": 18,
+  // "debug.console.lineHeight": 21
+  // "editor.suggest.insertMode": "insert"
+  // "python.analysis.logLevel": "Trace"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
